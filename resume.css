@@ -1,0 +1,190 @@
+/* ============================================
+   Resume Page Stylesheet
+   ============================================ */
+
+/* Resume Container */
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* Main Title */
+h1 {
+    color: #1a1a1a;
+    border-bottom: 3px solid #0077FF;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+/* Section Headings */
+h2 {
+    color: #1a1a1a;
+    font-size: 1.6rem;
+    margin-top: 35px;
+    margin-bottom: 18px;
+    padding-bottom: 8px;
+    border-left: 5px solid #0077FF;
+    padding-left: 15px;
+}
+
+/* Intro Paragraph */
+p {
+    font-size: 1.05rem;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+/* Resume Sections Container */
+ul {
+    list-style: none;
+    margin-left: 0;
+    margin-bottom: 25px;
+}
+
+ul li {
+    padding: 12px 0;
+    border-bottom: 1px solid #e8e8e8;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+
+ul li:before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #0077FF;
+    font-weight: bold;
+}
+
+ul li:last-child {
+    border-bottom: 2px solid #0077FF;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+}
+
+/* Return Link */
+p > a {
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+/* Navigation */
+nav ul {
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 15px;
+}
+
+nav ul li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+}
+
+nav ul li {
+    border-bottom: none;
+    padding: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+nav ul li a {
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+nav ul li a:after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #0077FF;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover:after {
+    width: 100%;
+}
+
+/* Print Friendly Styles */
+@media print {
+    body {
+        background: #fff;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav, p:last-child {
+        display: none;
+    }
+
+    h1, h2 {
+        page-break-after: avoid;
+    }
+
+    ul li {
+        page-break-inside: avoid;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        margin-top: 25px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    ul li {
+        padding-left: 15px;
+        padding: 10px 0 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        padding-left: 10px;
+        border-left: 4px solid #0077FF;
+    }
+
+    nav ul li {
+        margin-right: 15px;
+        font-size: 0.9rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}

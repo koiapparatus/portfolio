@@ -1,0 +1,128 @@
+/* ============================================
+   Photoshop & Animate Projects Stylesheet
+   ============================================ */
+
+/* Body styling for project pages */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+    color: #e0e0e0;
+    line-height: 1.8;
+}
+
+/* Page title */
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #00d4ff;
+    text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+    margin: 40px 0 20px;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+/* Project description */
+p {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #b0b0b0;
+}
+
+/* Image container */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 32px rgba(0, 212, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 48px rgba(0, 212, 255, 0.4);
+}
+
+/* Video container */
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 32px rgba(0, 212, 255, 0.2);
+    background: #000;
+}
+
+/* Return link styling */
+a {
+    color: #00d4ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #00f7ff;
+    text-decoration: underline;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    background: rgba(26, 31, 58, 0.8);
+    border-bottom: 2px solid #00d4ff;
+}
+
+nav ul li a {
+    font-size: 1rem;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: rgba(0, 212, 255, 0.1);
+    color: #00f7ff;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+    
+    nav ul {
+        gap: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    img, video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    nav ul {
+        gap: 10px;
+    }
+}

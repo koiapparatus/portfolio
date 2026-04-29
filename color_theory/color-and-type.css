@@ -1,0 +1,306 @@
+/* ============================================
+   Color Theory & Typography Pages Stylesheet
+   ============================================ */
+
+/* Page Styling */
+body {
+    background: #fafafa;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Headings */
+h1 {
+    color: #1a1a1a;
+    border-bottom: 3px solid #d946ef;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #2d2d2d;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    border-left: 4px solid #d946ef;
+    padding-left: 12px;
+}
+
+h3 {
+    color: #3a3a3a;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+/* Paragraph Styling */
+p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #444;
+    font-size: 1.05rem;
+}
+
+/* Bold Text */
+b, strong {
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+/* Primary Navigation */
+nav:first-of-type {
+    margin-bottom: 30px;
+    background: linear-gradient(to right, #f5f5f5, #fffafb);
+    padding: 15px 0;
+    border-radius: 6px;
+}
+
+/* Secondary Navigation */
+nav:not(:first-of-type) {
+    margin-bottom: 30px;
+    background: #f0e6ff;
+    padding: 12px 0;
+    border-radius: 6px;
+}
+
+nav ul {
+    justify-content: center;
+    gap: 25px;
+}
+
+nav ul li a {
+    font-weight: 500;
+    color: #555;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+nav ul li a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #d946ef;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover:after {
+    width: 100%;
+}
+
+nav ul li a:hover {
+    color: #d946ef;
+    text-decoration: none;
+}
+
+/* Lists */
+ol, ul {
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+ol li, ul li {
+    margin-bottom: 12px;
+    line-height: 1.7;
+    color: #444;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
+}
+
+img:hover {
+    box-shadow: 0 6px 16px rgba(217, 70, 239, 0.15);
+}
+
+/* Links */
+a {
+    color: #d946ef;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    border-bottom: 1px solid #d946ef;
+    color: #b8259b;
+}
+
+/* Spacing for Main Content */
+body > h2:first-of-type {
+    margin-top: 15px;
+}
+
+/* Return/Back Links */
+p > a:first-child {
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+/* Section Spacing */
+section {
+    margin-bottom: 35px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+table thead {
+    background: linear-gradient(135deg, #d946ef 0%, #b8259b 100%);
+    color: #fff;
+}
+
+table th {
+    padding: 16px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+table td {
+    padding: 16px;
+    border-bottom: 1px solid #e8e8e8;
+    color: #444;
+}
+
+table tbody tr:hover {
+    background: #f9f5ff;
+    transition: background 0.3s ease;
+}
+
+table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+table strong {
+    color: #1a1a1a;
+    display: block;
+    margin-bottom: 4px;
+}
+
+/* Color Sample Swatches */
+.color-sample {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border-radius: 4px;
+    margin: 3px;
+    border: 2px solid #e0e0e0;
+    vertical-align: middle;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.color-sample:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-top: 25px;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    img {
+        margin: 15px auto;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    table th, table td {
+        padding: 12px 8px;
+    }
+
+    .color-sample {
+        width: 35px;
+        height: 35px;
+        margin: 2px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    ol, ul {
+        margin-left: 20px;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    table {
+        font-size: 0.85rem;
+    }
+
+    table th, table td {
+        padding: 10px 6px;
+    }
+
+    .color-sample {
+        width: 30px;
+        height: 30px;
+        margin: 2px;
+    }
+}
