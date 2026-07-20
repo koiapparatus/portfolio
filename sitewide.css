@@ -193,6 +193,29 @@ main {
     margin: 0 auto;
 }
 
+.intro-section {
+    background: #fff;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+}
+
+.about-text {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.about-text p {
+    margin-bottom: 1.25rem;
+    line-height: 1.75;
+    font-size: 1.05rem;
+}
+
+.about-text h2 {
+    margin-bottom: 1rem;
+}
+
 /* Section */
 section {
     margin-bottom: 40px;

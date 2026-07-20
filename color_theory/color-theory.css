@@ -1,0 +1,262 @@
+/* ============================================
+   Color Theory & Typography Pages Stylesheet
+   ============================================ */
+
+:root {
+    --bg: #f7f7f7;
+    --surface: #ffffff;
+    --surface-muted: #f2f2f2;
+    --text: #222222;
+    --text-muted: #5d5d5d;
+    --border: #d7d7d7;
+    --shadow: rgba(34, 34, 34, 0.08);
+    --accent: #6c6c6c;
+    --accent-strong: #2d2d2d;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.75;
+    margin: 0;
+    padding: 24px;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, h2, h3 {
+    color: var(--accent-strong);
+    line-height: 1.2;
+    margin: 0;
+}
+
+h1 {
+    font-size: clamp(2rem, 2.5vw, 2.8rem);
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border);
+}
+
+h2 {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    margin-top: 2.25rem;
+    margin-bottom: 1rem;
+    padding-left: 0.85rem;
+    border-left: 4px solid var(--accent);
+}
+
+h3 {
+    font-size: clamp(1.1rem, 1.3vw, 1.35rem);
+    margin-top: 1.75rem;
+    margin-bottom: 0.75rem;
+}
+
+p {
+    margin-bottom: 1.25rem;
+    color: var(--text-muted);
+    font-size: 1rem;
+}
+
+strong, b {
+    color: var(--accent-strong);
+    font-weight: 600;
+}
+
+main {
+    padding: 0 10px;
+}
+
+.container {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 12px 30px var(--shadow);
+    margin-bottom: 2rem;
+}
+
+section {
+    margin-bottom: 2.5rem;
+}
+
+nav {
+    margin-bottom: 2rem;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    color: var(--accent-strong);
+    text-decoration: none;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus-visible {
+    background: var(--surface-muted);
+    color: var(--text);
+    transform: translateY(-1px);
+}
+
+ol, ul {
+    margin-left: 1.4rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-muted);
+}
+
+ol li, ul li {
+    margin-bottom: 0.9rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1.75rem auto;
+    border-radius: 14px;
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.06);
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+a:hover,
+a:focus-visible {
+    color: var(--accent-strong);
+    border-color: var(--accent);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    background: var(--surface);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.06);
+}
+
+thead {
+    background: #f4f4f4;
+}
+
+table th,
+table td {
+    padding: 1rem 1.25rem;
+    text-align: left;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+table th {
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--accent-strong);
+}
+
+table tbody tr:hover {
+    background: #fafafa;
+}
+
+table strong {
+    display: block;
+    margin-bottom: 0.35rem;
+}
+
+.color-sample {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    margin: 0.35rem;
+    border: 1px solid #dcdcdc;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.color-sample:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.08);
+}
+
+.text-muted {
+    color: var(--text-muted);
+}
+
+.text-center {
+    text-align: center;
+}
+
+@media (max-width: 840px) {
+    body {
+        padding: 18px;
+    }
+
+    nav ul {
+        justify-content: flex-start;
+    }
+
+    table th,
+    table td {
+        padding: 0.9rem 1rem;
+    }
+}
+
+@media (max-width: 620px) {
+    body {
+        padding: 14px;
+    }
+
+    h1 {
+        font-size: 1.95rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        margin-top: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav ul li a {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .color-sample {
+        width: 34px;
+        height: 34px;
+    }
+}

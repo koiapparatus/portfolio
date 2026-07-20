@@ -4,24 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sitewide.css">
+    <style>
+    .contact-page { padding: 1.25rem; max-width: 1000px; margin: 0 auto; }
+    .contact-grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; align-items: start; }
+    .contact-form, .contact-info { background: #fff; padding: 1.25rem; border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+    .contact-form h2, .contact-info h2 { margin-top: 0; }
+    .contact-form label { display: block; margin: 0.6rem 0 0.25rem; font-weight: 600; }
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea { width: 100%; padding: 0.6rem; border: 1px solid #ccc; border-radius: 4px; font: inherit; }
+    .contact-form textarea { resize: vertical; }
+    .btn-submit { display: inline-block; margin-top: 0.9rem; padding: 0.6rem 1rem; background: #111; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+    .btn-submit:hover { opacity: 0.95; }
+    .contact-info .small { color: #555; font-size: 0.9rem; }
+
+    @media (min-width: 780px) {
+        .contact-grid { grid-template-columns: 1fr 320px; }
+    }
+    </style>
     <title>Contact</title>
 </head>
 <body>
-    <h1>Contact Me</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="projects/projects.html">Projects</a></li>
-            <li><a href="color_theory/color_theory.html">Color Theory</a></li>
-            <li><a href="typography/typography.html">Typography</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-        </ul>
-    </nav>
-    <p>Feel free to reach out to me at any time!</p>
-    <p>Email: john.doe@example.com</p>
-    <p>Phone: (123) 456-7890</p>
-    <p>return to <a href="index.html">Home</a></p>
+    <header>
+        <h1>Contact Me</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+               
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects/projects.html">Projects</a></li>
+                <li><a href="color_theory/color_theory.html">Color Theory</a></li>
+                <li><a href="typography/typography.html">Typography</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <section class="contact-grid">
+            <form class="contact-form" action="#" method="post" novalidate>
+                <h2>Send a message</h2>
+
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your full name" required>
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+                <label for="subject">Subject</label>
+                <input id="subject" name="subject" type="text" placeholder="Subject" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" placeholder="Write your message..." required></textarea>
+
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+
+            <aside class="contact-info">
+                <h2>Other ways to reach me</h2>
+                <p>If you prefer, email me directly at <a href="justinjackson4158@gmail.com">justinjackson4158@gmail.com</a>.</p>
+                <p>Phone: <a href="tel:+11234567890">(123) 456-7890</a></p>
+                <p class="small">I aim to respond within 48 hours.</p>
+                <p><a href="index.html">Return to Home</a></p>
+            </aside>
+        </section>
+    </main>
+
+    
 </body>
 </html>
