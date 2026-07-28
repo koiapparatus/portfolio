@@ -1,0 +1,105 @@
+/* General project page styles */
+.project-main {
+    font-size: 1.5em;
+    margin-bottom: 25px;
+    text-align: center;
+    color: rgb(86, 192, 86);
+}
+/* Project list styles */
+.project-list {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 900px;
+    display: grid;
+    gap: 1.5rem;
+}
+/* Project item styles */
+.project-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    border: 1px solid rgba(86, 192, 86, 0.25);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.95);
+}
+/* Project thumbnail styles */
+.project-thumb {
+    flex-shrink: 0;
+    width: 96px;
+    height: 96px;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    display: inline-block;
+}
+/* Project thumbnail image styles */
+.project-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+/* Project information styles */
+.project-info {
+    flex: 1;
+}
+/* Project link styles */
+.project-link {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #0077FF;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 0.35rem;
+}
+/* Hover and focus states for project links */
+.project-link:hover,
+.project-link:focus {
+    text-decoration: underline;
+}
+/* Project description styles */
+.project-info p {
+    margin: 0;
+    line-height: 1.5;
+    color: #333;
+}
+/*h1 title for projects page*/
+.my-projects{
+    color: rgb(86, 192, 86);
+}
+
+/* Project page image styling */
+.project-page-img {
+    display: block;
+    max-width: 640px;
+    width: 90%;
+    height: auto;
+    margin: 1.25rem auto;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+/* Project description styling */
+.project-description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+/* Video page styling */
+.video-page {
+    display: block;
+    max-width: 640px;
+    width: 90%;
+    height: auto;
+    margin: 1.25rem auto;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+.project-body {
+    background-color: #681545;
+   
+}
+.return-home{
+    color: rgb(86, 192, 86);
+}

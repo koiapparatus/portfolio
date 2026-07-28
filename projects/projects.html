@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../sitewide.css">
+    <link rel="stylesheet" href="projects.css">
     
-    <link rel="stylesheet" href="../projects/photoshop-animate.css">
+  
    
     <title>Projects</title>
 </head>
-<body>
-    <h1>My Projects</h1>
+<body class="project-body">
+    <h1 class="my-projects">My Projects</h1>
     <nav>
         <ul>
             <li><a href="../index.html">Home</a></li>
-            
-            
             <li><a href="../resume.html">Resume</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="../color_theory/color_theory.html">Color Theory</a></li>
@@ -22,14 +22,48 @@
             <li><a href="../contact.html">Contact Me</a></li>
         </ul>
     </nav>
-    <p>Here are some of the projects I've worked on:</p>
-    <ul>
-        <li><a href="project-4.html">Seattle Animated Fireworks Display</a></li>
-        <li><a href="project-1.html">made up poster advertisement</a></li>
-        <li><a href="project-2.html">magazine cover layout design</a></li>
-        <li><a href="project-3.html">photoshop portfolio of digital art</a></li>
+    <p class="project-main">Here are some of the projects I've worked on:</p>
+    <ul class="project-list">
+        <li class="project-item">
+            <a class="project-thumb" href="project-4.html">
+                <img src="../images/seattle-fireworks-shot.png" alt="Seattle Animated Fireworks Display screenshot">
+            </a>
+            <div class="project-info">
+                <a class="project-link" href="project-4.html">Seattle Animated Fireworks Display</a>
+                <p>A short 12-second animation with a city skyline and fireworks built in HTML5 Canvas.</p>
+            </div>
+        </li>
+        <li class="project-item">
+            <a class="project-thumb" href="project-1.html">
+                <img src="../images/project_1.jpg" alt="Made up poster advertisement screenshot">
+            </a>
+            <div class="project-info">
+                <a class="project-link" href="project-1.html">Made up poster advertisement</a>
+                <p>A poster layout design showing branding and typography for a fictional product.</p>
+            </div>
+        </li>
+        <li class="project-item">
+            <a class="project-thumb" href="project-2.html">
+                <img src="../images/animal-kingdom-news.gif" alt="Magazine cover layout design screenshot">
+            </a>
+            <div class="project-info">
+                <a class="project-link" href="project-2.html">Magazine cover layout design</a>
+                <p>A magazine cover concept with a strong editorial style and layered visuals.</p>
+            </div>
+        </li>
+        <li class="project-item">
+            <a class="project-thumb" href="project-3.html">
+                <img src="../images/portfolio.gif" alt="Photoshop portfolio of digital art screenshot">
+            </a>
+            <div class="project-info">
+                <a class="project-link" href="project-3.html">Photoshop portfolio of digital art</a>
+                <p>A gallery presentation of digital art pieces created in Photoshop.</p>
+            </div>
+        </li>
     </ul>
-    
-    <p>return to <a href="../index.html">Home</a></p>
+    <footer>
+    <p class="return-home">Return to <a href="../index.html">Home</a></p>
+    </footer>
+   
 </body>
 </html>
