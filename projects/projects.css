@@ -96,10 +96,12 @@
     border-radius: 8px;
     box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
+/*body*/
 .project-body {
     background-color: #681545;
    
 }
+/*home*/
 .return-home{
     color: rgb(86, 192, 86);
 }

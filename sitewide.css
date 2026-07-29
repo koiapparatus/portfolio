@@ -192,7 +192,7 @@ main {
     max-width: 1200px;
     margin: 0 auto;
 }
-
+/*about container*/
 .intro-section {
     background: #fff;
     padding: 24px;
@@ -200,7 +200,7 @@ main {
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
     margin-bottom: 40px;
 }
-
+/*about text*/
 .about-text {
     max-width: 860px;
     margin: 0 auto;
