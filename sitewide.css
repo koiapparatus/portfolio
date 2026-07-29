@@ -231,36 +231,7 @@ footer {
     margin-top: 40px;
 }
 
-/* Color swatches */
-.color-sample {
-    display: inline-block;
-    width: 36px;
-    height: 36px;
-    margin: 4px;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-}
 
-.sample-light { background: #d9d9d9; }
-.sample-medium-light { background: #bababa; }
-.sample-medium-dark { background: #8f8f8f; }
-.sample-dark { background: #4f4f4f; }
-.sample-analogous-1 { background: #9da9b8; }
-.sample-analogous-2 { background: #b8c7d0; }
-.sample-analogous-3 { background: #d8e1e8; }
-.sample-complementary-1 { background: #6b7f9b; }
-.sample-complementary-2 { background: #e4a26b; }
-.sample-triadic-1 { background: #637d95; }
-.sample-triadic-2 { background: #95a563; }
-.sample-triadic-3 { background: #956363; }
-.sample-tetradic-1 { background: #637d95; }
-.sample-tetradic-2 { background: #95a563; } 
-.sample-tetradic-3 { background: #956363; } 
-.sample-tetradic-4 { background: #a56395; }
-.sample-neutral-1 { background: #f5f5f5; }
-.sample-neutral-2 { background: #c9c9c9; }
-.sample-neutral-3 { background: #7b7b7b; }
-.sample-neutral-4 { background: #1c1c1c; }
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -320,4 +291,5 @@ footer {
         width: 100%;
     }
 }
+
 

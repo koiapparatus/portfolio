@@ -73,7 +73,7 @@
 /* Project page image styling */
 .project-page-img {
     display: block;
-    max-width: 640px;
+    max-width: 500px;
     width: 90%;
     height: auto;
     margin: 1.25rem auto;

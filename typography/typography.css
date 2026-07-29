@@ -1,0 +1,131 @@
+ /*first letter styling*/
+ .first-paragraph::first-letter {
+    font-size: 5rem;
+    font-weight: bold;
+    float: left;
+    margin-right: 4px;
+    line-height: 1;
+}
+/*h3 styling*/
+.key-heading {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+/*list grid style*/
+.typography-terms {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px 20px;
+    padding-left: 20px;
+}
+/*list item styling*/
+.typography-terms li {
+    list-style-position: inside;
+}
+/*comparison heading styling*/
+.type-compare {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-family: monospace ;
+}
+/*article 1 and article 2 styling*/
+.article {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+/*first letter styling for article 1 and article 2*/
+.article::first-letter {
+    font-size: 3rem;
+    font-weight: bold;
+    float: left;
+    margin-right: 4px;
+    line-height: 1;
+}
+/* row styling*/
+.example-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    margin: 20px 20px 30px;
+}
+/* row paragraph styling*/
+.example-row p {
+    flex: 1;
+    margin: 0;
+}
+/* row image styling*/
+.shift-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: min(100%, 720px);
+    height: auto;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+}
+
+/*opinion styling*/
+.opinion {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    font-style: italic;
+}
+/*font difference heading styling*/
+.type-influnence {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-family: monospace ;
+   text-align: center;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   font-size: 2rem; 
+}
+/*cnn bold*/
+.bold {
+    font-weight: bold serif;
+    font-size: 1.5rem;
+}
+/*pregnancy announcement styling*/
+.announcement {
+    font-size: 1.5rem;
+    font-family: modern calligraphy;
+    
+}
+/*going out of business*/
+.going-away {
+    font-size: 1.5rem;
+    font-family: thick slab-serif;
+}
+/*business article styling*/
+.business {
+    font-size: 1rem;
+    font-weight: bold;
+    font-family:  sans-serif;
+}
+/*conclusion styling*/
+.font-power {
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/*body background color*/
+.font-body {
+   background-color: #f9f9f9;
+}
