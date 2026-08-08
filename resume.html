@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sitewide.css">
     <link rel="stylesheet" href="resume.css">
+    <script src="sitewide.js" defer></script>
     
     <title>Resume</title>
 </head>
@@ -15,27 +16,79 @@
        <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="resume.html">Resume</a></li>
-            <li><a href="projects/projects.html">Projects</a></li>
-            <li><a href="color_theory/color_theory.html">Color Theory</a></li>
-            <li><a href="typography/typography.html">Typography</a></li>
+            <li>
+                <a href="projects/projects.html">Projects</a>
+                <ul class="submenu">
+                  <li><a href="projects/project-1.html">Project 1</a></li>
+                    <li><a href="projects/project-2.html">Project 2</a></li>
+                    <li><a href="projects/project-3.html">Project 3</a></li>
+                    <li><a href="projects/project-4.html">Project 4</a></li>
+                 </ul>
+            </li>
+            <li><a href="color_theory/color_theory.html">Color Theory</a>
+                <ul class="submenu">
+                    <li><a href="color_theory/color_themes.html">Color Themes</a></li>
+                    <li><a href="color_theory/color_article.html">Color Article</a></li>
+                </ul>
+            </li>
+            <li><a href="typography/typography.html">Typography</a>
+                <ul class="submenu">
+                    <li><a href="typography/font_types.html">Font Types</a></li>
+                    <li><a href="typography/typography_article.html">Typography Article</a></li>
+                </ul>
+            </li>
             <li><a href="contact.html">Contact Me</a></li>
-        </ul>
+       
+       </ul>
+              <button id="theme-toggle" aria-label="Dark Mode" aria-pressed="false"></button>
+              <button id="font-resize" aria-label="Toggle Large Font" aria-pressed="false"></button>
     </nav>
     </header>
     <h1>My Resume</h1>
     
-    <h2 class="ed-select">Education</h2>
-    <ul class="ed-list">
-        <li>Ironworker apprentice,Trade School local 86 Tacoma Wa </li>
-           <li>National academy of sports and medicine, Seattle Wa</li>   
-    </ul><br>
-    <h2 class="work-select">Work Experience</h2>
+    <button class="toggle-btn ed-select" type="button" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('open');">
+        Education
+    </button>
+    <div class="collapsible-content">
+        <ul class="ed-list">
+            <li>Ironworker apprentice, Trade School Local 86, Tacoma, WA</li>
+            <li>National Academy of Sports and Medicine, Seattle, WA</li>
+        </ul>
+    </div><br>
+    <button class="toggle-btn skills-select" type="button" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('open');">
+        Skills
+    </button>
+        <div class="collapsible-content">
+           <ul class="skills-list">
+        <li>Leadership and team coordination</li>
+        <li>Customer service and client communication</li>
+        <li>Training and coaching</li>
+        <li>Problem-solving under pressure</li>
+        <li>Safety awareness and attention to detail</li>
+        <li>Time management and reliability</li>
+        <li>Adaptability and multitasking</li>
+        <li>Strong work ethic and professionalism</li>
+    </ul>
+        </div><br>
+    <button class="toggle-btn work-select" type="button" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('open');">
+        Work Experience
+    </button>
+    <div class="collapsible-content">
+  
     <ul class="work-list">
         <li>Ironworker, Seattle Wa, 2017-2021</li>
         <li>Personal trainer, vision quest Seattle Wa, 2010-2017</li>
+        <li>Coffee Barista, Seattle Wa, 2008-2010</li>
+        <li>Construction laborer, Seattle Wa, 2005-2008</li>
     </ul>
-     <footer>  
-     <p><a href="index.html">Return to Home</a></p>
-        </footer>
+    </div>
+   <footer>
+  <p><a href="index.html">Return to Home</a></p>
+  <p class="attribution">
+    <a href="https://icons8.com">Animated GIFs by Icons8</a><br>
+     <a href="https://www.flaticon.com/free-animated-icons/font-size" title="font size animated icons">Font size animated icons created by Magnific - Flaticon</a>
+  </p>
+ 
+</footer>
     </body>
 </html>

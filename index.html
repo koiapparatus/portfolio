@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="sitewide.css">
+    <script src="sitewide.js" defer></script>
     <title>Portfolio</title>
 </head>
 <body>
@@ -13,11 +14,35 @@
        <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="resume.html">Resume</a></li>
-            <li><a href="projects/projects.html">Projects</a></li>
-            <li><a href="color_theory/color_theory.html">Color Theory</a></li>
-            <li><a href="typography/typography.html">Typography</a></li>
+            <li>
+                <a href="projects/projects.html">Projects</a>
+                <ul class="submenu">
+                  <li><a href="projects/project-1.html">Project 1</a></li>
+                    <li><a href="projects/project-2.html">Project 2</a></li>
+                    <li><a href="projects/project-3.html">Project 3</a></li>
+                    <li><a href="projects/project-4.html">Project 4</a></li>
+                 </ul>
+            </li>
+                   
+            <li><a href="color_theory/color_theory.html">Color Theory</a>
+                <ul class="submenu">
+                    <li><a href="color_theory/color_themes.html">Color Themes</a></li>
+                    <li><a href="color_theory/color_article.html">Color Article</a></li>
+                </ul>
+            </li>
+            <li><a href="typography/typography.html">Typography</a>
+                <ul class="submenu">
+                    <li>
+                        <a href="typography/font_types.html">Font Types</a>
+                        <a href="typography/typography_article.html">Typography Article</a>
+                    </li>
+                </ul>
+            </li>
             <li><a href="contact.html">Contact Me</a></li>
-        </ul>
+      </ul>      
+    <button id="theme-toggle" aria-label="Dark Mode" aria-pressed="false"></button>
+    <button id="font-resize" aria-label="Toggle Large Font" aria-pressed="false"></button>
+
     </nav>
     </header>
     <h1>My Portfolio</h1>
@@ -31,5 +56,12 @@
             <p>I am actively developing my web development abilities by completing various courses. This portfolio showcases the knowledge I have gained up to this point, as well as the advancements I am making in both design and development aspects. It reflects my ongoing commitment to improving my skills and growing as a web developer.</p>
         </section>
     </main>
+    <footer>
+  
+  <p class="attribution">
+    <a href="https://icons8.com">Animated GIFs by Icons8</a><br>
+     <a href="https://www.flaticon.com/free-animated-icons/font-size" title="font size animated icons">Font size animated icons created by Magnific - Flaticon</a>
+  </p>
+</footer>
 </body>
 </html>

@@ -1,52 +1,74 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../sitewide.css">
     <link rel="stylesheet" href="typography.css">
-        
+      <script src="../sitewide.js" defer></script>  
     
     <title>Typography Article</title>
 </head>
-<body class="font-body">
-    <main class="container">
-   <header>
+<body>
+    <header>
     <nav>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="../resume.html">Resume</a></li>
-            <li><a href="../projects/projects.html">Projects</a></li>
-            <li><a href="../color_theory/color_theory.html">Color Theory</a></li>
-            <li><a href="../typography/typography.html">Typography</a></li>
+             <li>
+                <a href="../projects/projects.html">Projects</a>
+                <ul class="submenu">
+                  <li><a href="../projects/project-1.html">Project 1</a></li>
+                    <li><a href="../projects/project-2.html">Project 2</a></li>
+                    <li><a href="../projects/project-3.html">Project 3</a></li>
+                    <li><a href="../projects/project-4.html">Project 4</a></li>
+                 </ul>
+            </li>
+            <li><a href="../color_theory/color_theory.html">Color Theory</a>
+                <ul class="submenu">
+                    <li><a href="../color_theory/color_themes.html">Color Themes</a></li>
+                    <li><a href="../color_theory/color_article.html">Color Article</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="typography.html">Typography</a>
+                <ul class="submenu">
+                    <li><a href="font_types.html">Font Types</a></li>
+                    <li><a href="typography_article.html">Typography Article</a></li>
+                </ul>
+            </li>
             
              <li><a href="../contact.html">Contact Me</a></li>
-            </ul>
+       
+        </ul>
+                <button id="theme-toggle" aria-label="Dark Mode" aria-pressed="false"></button>
+                <button id="font-resize" aria-label="Toggle Large Font" aria-pressed="false"></button>
     </nav>
     </header>
+    <main class="container">
     <h1>typography article</h1>
-    <nav>
-        <ul>
-         <li><a href="font_types.html">Font Types</a></li>
-         <li><a href="typography.html">Typography</a></li>
-         </ul>
-    </nav>
+    
            <h2 class="type-compare">Typography Comparison</h2>
 
 <p class="opinion">Both reviews selected for this comparison are centered around the same topic: an upcoming video game. This shared focus allows for a straightforward evaluation of the differences in style and layout between the two reviews, as any variations can be attributed solely to their presentation rather than content.</p><hr>
 <p class="article">The Outerhaven Review Presentation
-The Outerhaven review distinguishes itself through its use of a bold font, which immediately draws attention and gives the page a visually striking quality. The review also features well-placed white space around the content, contributing to an organized and clean layout. This approach ensures that the review is easy to read and navigate, ultimately enhancing the overall readability and user experience for the audience.<a href="https://www.theouterhaven.net/crimson-desert-review/">Crimson Desert Review - The Outer Haven</a> <img src="../images/crimson_desert_review_The_outerhaven.png" width="600" height="400" alt="Crimson Desert Review"></p>
+The Outerhaven review distinguishes itself through its use of a bold font, which immediately draws attention and gives the page a visually striking quality. The review also features well-placed white space around the content, contributing to an organized and clean layout. This approach ensures that the review is easy to read and navigate, ultimately enhancing the overall readability and user experience for the audience. <img src="../images/crimson_desert_review_The_outerhaven.png" width="600" height="400" alt="Crimson Desert Review"></p><a href="https://www.theouterhaven.net/crimson-desert-review/">Crimson Desert Review - The Outer Haven</a><hr>
 
 
     
      
        
        <h2 class="type-compare">Alternative Review Presentation</h2>
-<p class="article">By contrast, the other article presents a less effective design. Its overall appearance is messy and feels insubstantial. Instead of creating clarity, the use of whitespace adds to the sense of clutter on the page. The font appears too thin, which detracts from readability. Additionally, the paragraph structure resembles a continuous block of textbook text without clear break points, making it difficult for the reader to maintain their place. The left-to-right layout does little to guide the eyes or provide relief within the text, resulting in a challenging reading experience.<a href="https://www.gamespot.com/reviews/crimson-desert-review-highest-fantasy/1900-6418474/">Crimson Desert Review - GameSpot</a></p><img src="../images/Crimson_desert_review_highest_fantasy.png" width="600" height="400" alt="Crimson Desert Review GameSpot">
+<p class="article">By contrast, the other article presents a less effective design. Its overall appearance is messy and feels insubstantial. Instead of creating clarity, the use of whitespace adds to the sense of clutter on the page. The font appears too thin, which detracts from readability. Additionally, the paragraph structure resembles a continuous block of textbook text without clear break points, making it difficult for the reader to maintain their place. The left-to-right layout does little to guide the eyes or provide relief within the text, resulting in a challenging reading experience.</p><img src="../images/Crimson_desert_review_highest_fantasy.png" width="600" height="400" alt="Crimson Desert Review GameSpot">
+<a href="https://www.gamespot.com/reviews/crimson-desert-review-highest-fantasy/1900-6418474/">Crimson Desert Review - GameSpot</a>
    <footer>
 <p>
         <a href="../index.html">Return to Home</a>
-    </p>
+        <p class="attribution">
+    <a href="https://icons8.com">Animated GIFs by Icons8</a><br>
+     <a href="https://www.flaticon.com/free-animated-icons/font-size" title="font size animated icons">Font size animated icons created by Magnific - Flaticon</a>
+  </p>
+   
     </footer>
 </main>
 </body>

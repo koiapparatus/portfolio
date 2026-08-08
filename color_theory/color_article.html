@@ -1,40 +1,55 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../sitewide.css">
     <link rel="stylesheet" href="color.css">
-    
+    <script src="../sitewide.js" defer></script>
     <title>Color Article</title>
 </head>
 <body>
-<main class="container">
     <header>
         
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../resume.html">Resume</a></li>
-                <li><a href="../projects/projects.html">Projects</a></li>
-                <li><a href="../color_theory/color_theory.html">Color Theory</a></li>
-                <li><a href="../typography/typography.html">Typography</a></li>
+            <li>
+                <a href="../projects/projects.html">Projects</a>
+                <ul class="submenu">
+                  <li><a href="../projects/project-1.html">Project 1</a></li>
+                    <li><a href="../projects/project-2.html">Project 2</a></li>
+                    <li><a href="../projects/project-3.html">Project 3</a></li>
+                    <li><a href="../projects/project-4.html">Project 4</a></li>
+                 </ul>
+            </li>
+                <li><a href="color_theory.html">Color Theory</a>
+                    <ul class="submenu">
+                        <li><a href="color_themes.html">Color Themes</a></li>
+                        <li><a href="color_article.html">Color Article</a></li>
+                    </ul>
+                </li>
+                <li><a href="../typography/typography.html">Typography</a>
+                    <ul class="submenu">
+                        <li><a href="../typography/font_types.html">Font Types</a></li>
+                        <li><a href="../typography/typography_article.html">Typography Article</a></li>
+                    </ul>
+                </li>
                 <li><a href="../contact.html">Contact Me</a></li>
             </ul>
+                   <button id="theme-toggle" aria-label="Dark Mode" aria-pressed="false"></button>
+                   <button id="font-resize" aria-label="Toggle Large Font" aria-pressed="false"></button>
         </nav>
        
         
     </header>
-    <h1>Color Article</h1>
-     <nav>
-            <ul>
-                <li><a href="color_theory.html">Color Theory</a></li>
-                <li><a href="color_themes.html">Color Themes</a></li>
-            </ul>
-        </nav>
+   
+   
     
 
     <section>
+         <h1>Color Article</h1>
         <h2 class="color-article">Visual Branding and Interface Observations</h2>
         <hr>
        
@@ -45,11 +60,9 @@
         <h3>Target's use of red</h3>
     </div>
             <p class="article-1">Target's bold red branding works well because it instantly grabs attention and establishes a clear visual identity. The striking contrast between the vibrant red and the neutral background ensures that the logo and important elements stand out and are easily identifiable. This powerful visual approach contributes to the brand's sense of confidence and makes it highly memorable to consumers.</p>
-            <p><a href="https://www.target.com/" target="_blank" rel="noopener noreferrer">Visit Target website</a></p>
-            <figure>
-                <img src="../images/Target_expect_more_pay_less.png" width="480" height="360" alt="Target website screenshot">
-               
-            </figure>
+            <img src="../images/Target_expect_more_pay_less.png" width="480" height="360" alt="Target website screenshot">
+               <p><a href="https://www.target.com/" target="_blank" rel="noopener noreferrer">Visit Target website</a></p>
+          
         </article>
 
         <article>
@@ -64,17 +77,22 @@
             <h3>Steams approach to interface design</h3>
             </div>
             <p class="article-2">Steam preserves a tidy and uncluttered interface by employing subdued colors and a well-defined visual hierarchy. The search bar is straightforward to use and manage, while the selected color scheme steers clear of overly bright or harsh tones, yet still offers sufficient contrast to facilitate smooth navigation. This carefully controlled palette not only enhances usability but also contributes to a more contemporary and polished user experience, making the platform feel both accessible and up-to-date.</p>
+            <img src="../images/steam_store.png" width="480" height="360" alt="Steam store screenshot">
             <p><a href="https://store.steampowered.com/" target="_blank" rel="noopener noreferrer">Visit Steam website</a></p>
-            <figure>
-                <img src="../images/steam_store.png" width="480" height="360" alt="Steam store screenshot">
+            
                
-            </figure>
+            
         </article>
     </section>
 
     <footer>
         <p><a href="../index.html">Return to Home</a></p>
+        <p class="attribution">
+    <a href="https://icons8.com">Animated GIFs by Icons8</a><br>
+     <a href="https://www.flaticon.com/free-animated-icons/font-size" title="font size animated icons">Font size animated icons created by Magnific - Flaticon</a>
+  </p>
     </footer>
-</main>
+
 </body>
 </html>
+

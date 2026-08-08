@@ -1,4 +1,9 @@
- /*first letter styling*/
+ /*first paragraph, first letter styling*/
+ .first-paragraph{
+    font-size: var(--base-font-size);
+    line-height: 1.8;
+ }
+ 
  .first-paragraph::first-letter {
     font-size: 5rem;
     font-weight: bold;
@@ -31,15 +36,15 @@
     margin-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 2rem;
+    font-size:var(--base-font-size); 
     font-family: monospace ;
 }
 /*article 1 and article 2 styling*/
 .article {
     margin-left: 20px;
     margin-right: 20px;
-    font-size: 1.5rem;
-    line-height: 1.6;
+    font-size: var(--base-font-size);
+    line-height: 1.8;
 }
 /*first letter styling for article 1 and article 2*/
 .article::first-letter {
@@ -60,13 +65,14 @@
 .example-row p {
     flex: 1;
     margin: 0;
+    font-size: var(--base-font-size);
+    line-height: 1.6;
 }
 /* row image styling*/
 .shift-center {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: min(100%, 720px);
+    margin: 1.25rem auto;
+    width: min(100%, 800px);
     height: auto;
     background-color: #ffffff;
     padding: 10px;
@@ -98,34 +104,55 @@
 }
 /*cnn bold*/
 .bold {
-    font-weight: bold serif;
-    font-size: 1.5rem;
+    font-weight: bold;
+    font-size:var(--base-font-size);
 }
 /*pregnancy announcement styling*/
 .announcement {
-    font-size: 1.5rem;
-    font-family: modern calligraphy;
+    font-size:var(--base-font-size);
+    font-family: "modern calligraphy", serif;
     
 }
 /*going out of business*/
 .going-away {
-    font-size: 1.5rem;
-    font-family: thick slab-serif;
-}
-/*business article styling*/
-.business {
-    font-size: 1rem;
-    font-weight: bold;
-    font-family:  sans-serif;
+    font-size: var(--base-font-size);
+    font-family: "thick slab serif", serif;
 }
 /*conclusion styling*/
 .font-power {
-    font-size: 1.5rem;
+    font-size: var(--base-font-size);
     font-family: sans-serif;
     margin-left: 20px;
     margin-right: 20px;
 }
-/*body background color*/
-.font-body {
-   background-color: #f9f9f9;
+/*img and link styling*/
+img[src="../images/Crimson_desert_review_highest_fantasy.png"]{
+     display: block;
+    width: min(100%, 800px);
+    height: auto;
+    margin: 1.25rem auto;
 }
+img[src="../images/crimson_desert_review_The_outerhaven.png"]{
+     display: block;
+    width: min(100%, 800px);
+    height: auto;
+    margin: 1.25rem auto;
+}
+a[href="https://www.theouterhaven.net/crimson-desert-review/"] {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: var(--base-font-size);
+    color: var(--link);
+}
+a[href="https://www.gamespot.com/reviews/crimson-desert-review-highest-fantasy/1900-6418474/"] {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: var(--base-font-size);
+    color: var(--link);
+}
+
+    

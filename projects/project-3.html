@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../sitewide.css">
     <link rel="stylesheet" href="projects.css">
-    
+    <script src="../sitewide.js" defer></script>
    
     <title>Project 3</title>
 </head>
@@ -15,11 +15,31 @@
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="../resume.html">Resume</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="../color_theory/color_theory.html">Color Theory</a></li>
-            <li><a href="../typography/typography.html">Typography</a></li>
+            <li>
+                <a href="projects.html">Projects</a>
+                <ul class="submenu">
+                  <li><a href="project-1.html">Project 1</a></li>
+                    <li><a href="project-2.html">Project 2</a></li>
+                    <li><a href="project-3.html">Project 3</a></li>
+                    <li><a href="project-4.html">Project 4</a></li>
+                 </ul>
+            </li>
+            <li><a href="../color_theory/color_theory.html">Color Theory</a>
+                <ul class="submenu">
+                    <li><a href="../color_theory/color_themes.html">Color Themes</a></li>
+                    <li><a href="../color_theory/color_article.html">Color Article</a></li>
+                    </ul>
+            </li>
+            <li><a href="../typography/typography.html">Typography</a>
+                <ul class="submenu">
+                    <li><a href="../typography/font_types.html">Font Types</a></li>
+                    <li><a href="../typography/typography_article.html">Typography Article</a></li>
+                </ul>
+            </li>
             <li><a href="../contact.html">Contact Me</a></li>
         </ul>
+        <button id="theme-toggle" aria-label="Dark Mode" aria-pressed="false"></button>
+        <button id="font-resize" aria-label="Toggle Large Font" aria-pressed="false"></button>
     </nav>
     </header>
     
@@ -28,7 +48,11 @@
      
     <img class="project-page-img" src="../images/portfolio.gif" alt="Project 3">
     <footer>
-    <p class="return-home">return to <a href="projects.html">Projects</a></p>
+    <p class="return-home"><a href="projects.html">Return To Projects</a></p>
+    <p class="attribution">
+    <a href="https://icons8.com">Animated GIFs by Icons8</a><br>
+     <a href="https://www.flaticon.com/free-animated-icons/font-size" title="font size animated icons">Font size animated icons created by Magnific - Flaticon</a>
+  </p>
     </footer>
   
 </body>

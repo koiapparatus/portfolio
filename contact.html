@@ -1,23 +1,26 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sitewide.css">
+    <script src="sitewide.js" defer></script>
    
     <style>
     .contact-page { padding: 1.25rem; max-width: 1000px; margin: 0 auto; }
     .contact-grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; align-items: start; }
-    .contact-form, .contact-info { background: #fff; padding: 1.25rem; border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+    .contact-form, .contact-info { background: var(--card); color: var(--text); padding: 1.25rem; border-radius: 6px; box-shadow: 0 1px 4px var(--card-shadow); }
     .contact-form h2, .contact-info h2 { margin-top: 0; }
     .contact-form label { display: block; margin: 0.6rem 0 0.25rem; font-weight: 600; }
     .contact-form input[type="text"],
     .contact-form input[type="email"],
-    .contact-form textarea { width: 100%; padding: 0.6rem; border: 1px solid #ccc; border-radius: 4px; font: inherit; }
+    .contact-form textarea { width: 100%; padding: 0.6rem; border: 1px solid var(--border); border-radius: 4px; font: inherit; background: var(--card); color: var(--text); }
     .contact-form textarea { resize: vertical; }
-    .btn-submit { display: inline-block; margin-top: 0.9rem; padding: 0.6rem 1rem; background: #111; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+    .btn-submit { display: inline-block; margin-top: 0.9rem; padding: 0.6rem 1rem; background: var(--button-bg); color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size:var(--card) }
     .btn-submit:hover { opacity: 0.95; }
-    .contact-info .small { color: #555; font-size: 0.9rem; }
+    .contact-info { overflow-wrap: anywhere; word-break: break-word; }
+    .contact-info a { display: inline-block; max-width: 100%; overflow-wrap: anywhere; word-break: break-word; }
+    .contact-info .small { color: var(--muted); font-size: var(--card); }
 
     @media (min-width: 780px) {
         .contact-grid { grid-template-columns: 1fr 320px; }
@@ -33,11 +36,34 @@
                 <li><a href="index.html">Home</a></li>
                
                 <li><a href="resume.html">Resume</a></li>
-                <li><a href="projects/projects.html">Projects</a></li>
-                <li><a href="color_theory/color_theory.html">Color Theory</a></li>
-                <li><a href="typography/typography.html">Typography</a></li>
+                <li>
+                <a href="projects/projects.html">Projects</a>
+                <ul class="submenu">
+                  <li><a href="projects/project-1.html">Project 1</a></li>
+                    <li><a href="projects/project-2.html">Project 2</a></li>
+                    <li><a href="projects/project-3.html">Project 3</a></li>
+                    <li><a href="projects/project-4.html">Project 4</a></li>
+                 </ul>
+            </li>
+                <li><a href="color_theory/color_theory.html">Color Theory</a>
+                    <ul class="submenu">
+                    <li>
+                        <a href="color_theory/color_themes.html">Color Themes</a>
+                        <a href="color_theory/color_article.html">Color Article</a>
+                    </li>
+                    </ul>
+                </li>
+                <li><a href="typography/typography.html">Typography</a>
+                    <ul class="submenu">
+                        <li><a href="typography/font_types.html">Font Types</a></li>
+                        <li><a href="typography/typography_article.html">Typography Article</a></li>
+                    </ul>
+                </li>
                 <li><a href="contact.html">Contact Me</a></li>
+            
             </ul>
+                    <button id="theme-toggle" aria-label="Dark Mode" aria-pressed="false"></button>
+                    <button id="font-resize" aria-label="Toggle Large Font" aria-pressed="false"></button>
         </nav>
     </header>
      <h1>Contact Me</h1>
@@ -48,10 +74,10 @@
                 <h2>Send a message</h2>
 
                 <label for="name">Name</label>
-                <input id="name" name="name" type="text" placeholder="Your full name" required>
+                <input id="name" name="name" type="text" autocomplete="given-name" placeholder="your full name" required>
 
                 <label for="email">Email</label>
-                <input id="email" name="email" type="email" placeholder="you@example.com" required>
+                <input id="email" name="email" type="email" autocomplete="off" placeholder="you@example.com" required>
 
                 <label for="subject">Subject</label>
                 <input id="subject" name="subject" type="text" placeholder="Subject" required>
@@ -64,13 +90,22 @@
 
             <aside class="contact-info">
                 <h2>Other ways to reach me</h2>
-                <p>If you prefer, email me directly at <a href="justinjackson4158@gmail.com">justinjackson4158@gmail.com</a>.</p>
+                <p>If you prefer, email me directly at <a href="mailto:justinjackson4158@gmail.com">justinjackson4158@gmail.com</a></p>
                 <p>Phone: <a href="tel:+11234567890">(123) 456-7890</a></p>
                 <p class="small">I aim to respond within 48 hours.</p>
                 <p><a href="index.html">Return to Home</a></p>
-            </aside>
-        </section>
+                </aside>
+                <footer>
+  
+  <p class="attribution">
+    <a href="https://icons8.com">Animated GIFs by Icons8</a><br>
+     <a href="https://www.flaticon.com/free-animated-icons/font-size" title="font size animated icons">Font size animated icons created by Magnific - Flaticon</a>
+  </p>
+ </footer>
+       
+       </section>
     </main>
+    
 
     
 </body>

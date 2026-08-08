@@ -1,6 +1,6 @@
 /* General project page styles */
 .project-main {
-    font-size: 1.5em;
+    font-size: var(--base-font-size);
     margin-bottom: 25px;
     text-align: center;
     color: rgb(86, 192, 86);
@@ -20,9 +20,10 @@
     align-items: flex-start;
     gap: 1rem;
     padding: 1rem 1.25rem;
-    border: 1px solid rgba(86, 192, 86, 0.25);
+    border: 1px solid var(--border-color, rgba(86, 192, 86, 0.25));
     border-radius: 14px;
-    background: rgba(255, 255, 255, 0.95);
+    background: var(--surface-color, rgba(255, 255, 255, 0.95));
+    box-shadow: 0 10px 24px var(--shadow-color, rgba(0, 0, 0, 0.08));
 }
 /* Project thumbnail styles */
 .project-thumb {
@@ -31,7 +32,7 @@
     height: 96px;
     overflow: hidden;
     border-radius: 12px;
-    border: 1px solid rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--thumb-border, rgba(0, 0, 0, 0.08));
     display: inline-block;
 }
 /* Project thumbnail image styles */
@@ -49,7 +50,7 @@
 .project-link {
     font-size: 1.1rem;
     font-weight: 700;
-    color: #0077FF;
+    color: var(--link-color);
     text-decoration: none;
     display: inline-block;
     margin-bottom: 0.35rem;
@@ -61,20 +62,21 @@
 }
 /* Project description styles */
 .project-info p {
+    font-size: var(--base-font-size);
     margin: 0;
     line-height: 1.5;
-    color: #333;
+    color: var(--text-color);
 }
 /*h1 title for projects page*/
 .my-projects{
+    
     color: rgb(86, 192, 86);
 }
 
 /* Project page image styling */
 .project-page-img {
     display: block;
-    max-width: 500px;
-    width: 90%;
+    width: min(100%, 720px);
     height: auto;
     margin: 1.25rem auto;
     border-radius: 8px;
@@ -89,8 +91,7 @@
 /* Video page styling */
 .video-page {
     display: block;
-    max-width: 640px;
-    width: 90%;
+    width: min(125%, 700px);
     height: auto;
     margin: 1.25rem auto;
     border-radius: 8px;
@@ -98,10 +99,30 @@
 }
 /*body*/
 .project-body {
-    background-color: #681545;
    
+    --surface-color: rgba(255, 255, 255, 0.95);
+    --text-color: #333;
+    --link-color: #0077FF;
+    --border-color: rgba(86, 192, 86, 0.25);
+    --thumb-border: rgba(0, 0, 0, 0.08);
+    --shadow-color: rgba(0, 0, 0, 0.08);
 }
+
+body.dark.project-body {
+    --surface-color: rgba(255, 255, 255, 0.08);
+    --text-color: #f1f1f1;
+    --link-color: #8cd97a;
+    --border-color: rgba(86, 192, 86, 0.35);
+    --thumb-border: rgba(255, 255, 255, 0.12);
+    --shadow-color: rgba(255, 255, 255, 0.1);
+}
+
 /*home*/
 .return-home{
     color: rgb(86, 192, 86);
+}
+.light-mode {
+    --surface-color: #fff;
+    --text-color: #333;
+    --link-color: #0077FF;
 }
