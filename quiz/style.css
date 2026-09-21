@@ -1,0 +1,132 @@
+body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  justify-content: center;
+  margin: 0;
+  padding: 5px 20px 50px;
+  color: var(--text);
+  background: var(--bg);
+}
+
+body.quiz-page {
+  padding-top: 90px;
+}
+
+@media (max-width: 700px) {
+  body.quiz-page {
+    padding-top: 145px;
+  }
+}
+
+.quiz-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 18px;
+  max-width: 700px;
+  width: 100%;
+}
+
+.back-home {
+  color: var(--link);
+  font-size: 1rem;
+}
+
+.quiz-controls {
+  display: flex;
+  gap: 8px;
+}
+
+footer {
+  margin-top: 32px;
+  max-width: 700px;
+  text-align: center;
+  width: 100%;
+}
+
+.attribution {
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+body.dark #result,
+body.dark .score-display {
+  background: #351c1c;
+  color: #f4c3c3;
+}
+
+#result,
+.score-display {
+  background: #fff4f4;
+  border: 2px solid #d9534f;
+  border-radius: 8px;
+  color: #7a1f1f;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 20px;
+  max-width: 500px;
+  padding: 12px 18px;
+  text-align: center;
+}
+
+.question {
+  border: 2px solid transparent;
+  border-radius: 8px;
+  margin: 12px 0;
+  padding: 12px;
+  transition: all 0.2s ease;
+  max-width: 700px;
+  width: min(100%, 700px);
+}
+
+.question label {
+  display: block;
+  margin: 4px 0;
+  padding: 2px 0;
+}
+
+.question.correct {
+  background: transparent;
+  border-color: transparent;
+}
+
+.question.incorrect {
+  background: #f8d7d7;
+  border-color: #b51d1d;
+  box-shadow: 0 0 0 2px rgba(181, 29, 29, 0.2);
+}
+
+.question.incorrect label {
+  background: #f4c3c3;
+  border: 1px solid #b51d1d;
+  border-radius: 6px;
+  display: block;
+  margin: 6px 0;
+  padding: 6px 8px;
+}
+
+.question.correct label {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  display: block;
+  margin: 6px 0;
+  padding: 6px 8px;
+}
+
+#submit-btn {
+  background: #d9534f;
+  border: 1px solid #d9534f;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  padding: 10px 20px;
+}
+
+#submit-btn:hover {
+  background: #b51d1d;
+}

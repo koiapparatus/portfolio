@@ -3,7 +3,7 @@
     font-size: var(--base-font-size);
     margin-bottom: 25px;
     text-align: center;
-    color: rgb(86, 192, 86);
+    color: var(--text);
 }
 /* Project list styles */
 .project-list {
@@ -20,9 +20,9 @@
     align-items: flex-start;
     gap: 1rem;
     padding: 1rem 1.25rem;
-    border: 1px solid var(--border-color, rgba(86, 192, 86, 0.25));
-    border-radius: 14px;
-    background: var(--surface-color, rgba(255, 255, 255, 0.95));
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--card);
     box-shadow: 0 10px 24px var(--shadow-color, rgba(0, 0, 0, 0.08));
 }
 /* Project thumbnail styles */
@@ -31,7 +31,7 @@
     width: 96px;
     height: 96px;
     overflow: hidden;
-    border-radius: 12px;
+    border-radius: 6px;
     border: 1px solid var(--thumb-border, rgba(0, 0, 0, 0.08));
     display: inline-block;
 }
@@ -50,7 +50,7 @@
 .project-link {
     font-size: 1.1rem;
     font-weight: 700;
-    color: var(--link-color);
+    color: var(--link);
     text-decoration: none;
     display: inline-block;
     margin-bottom: 0.35rem;
@@ -69,8 +69,7 @@
 }
 /*h1 title for projects page*/
 .my-projects{
-    
-    color: rgb(86, 192, 86);
+    color: var(--text);
 }
 
 /* Project page image styling */
@@ -119,7 +118,7 @@ body.dark.project-body {
 
 /*home*/
 .return-home{
-    color: rgb(86, 192, 86);
+    color: var(--link);
 }
 .light-mode {
     --surface-color: #fff;
