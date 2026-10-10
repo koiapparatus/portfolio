@@ -950,6 +950,26 @@ textarea:focus-visible {
 
     nav.navbar .submenu {
         margin-left: 0.75rem;
+        border-left: 3px solid var(--link);
+    }
+
+    nav.navbar .navbar-nav > li:hover > .submenu,
+    nav.navbar .navbar-nav > li:focus-within > .submenu,
+    nav.navbar .navbar-nav > li .submenu:hover {
+        align-items: stretch;
+        gap: 0;
+        text-align: left;
+        animation: submenu-fade 0.2s ease-out;
+    }
+}
+
+@keyframes submenu-fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }
 
