@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap-5.2.3-dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="sitewide.css">
     <link rel="stylesheet" href="resume.css">
     <script src="sitewide.js" defer></script>
@@ -51,44 +52,121 @@
               <button id="font-resize" aria-label="Toggle Large Font" aria-pressed="false"></button>
     </nav>
     </header>
-    <h1>My Resume</h1>
-    
-    <button class="toggle-btn ed-select" type="button" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('open');">
-        Education
-    </button>
-    <div class="collapsible-content">
-        <ul class="ed-list">
-            <li>Ironworker apprentice, Trade School Local 86, Tacoma, WA</li>
-            <li>National Academy of Sports and Medicine, Seattle, WA</li>
-        </ul>
-    </div><br>
-    <button class="toggle-btn skills-select" type="button" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('open');">
-        Skills
-    </button>
-        <div class="collapsible-content">
-           <ul class="skills-list">
-        <li>Leadership and team coordination</li>
-        <li>Customer service and client communication</li>
-        <li>Training and coaching</li>
-        <li>Problem-solving under pressure</li>
-        <li>Safety awareness and attention to detail</li>
-        <li>Time management and reliability</li>
-        <li>Adaptability and multitasking</li>
-        <li>Strong work ethic and professionalism</li>
-    </ul>
-        </div><br>
-    <button class="toggle-btn work-select" type="button" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('open');">
-        Work Experience
-    </button>
-    <div class="collapsible-content">
-  
-    <ul class="work-list">
-        <li>Ironworker, Seattle Wa, 2017-2021</li>
-        <li>Personal trainer, vision quest Seattle Wa, 2010-2017</li>
-        <li>Coffee Barista, Seattle Wa, 2008-2010</li>
-        <li>Construction laborer, Seattle Wa, 2005-2008</li>
-    </ul>
-    </div>
+    <main class="container resume-page">
+        <section class="resume-intro">
+            <p class="eyebrow">PROFILE</p>
+            <h1>My Resume</h1>
+            <p class="lead">A hands-on professional bringing years of experience in construction, training, and customer service into a new career in web design and development.</p>
+            <div class="d-flex flex-wrap gap-2">
+                <span class="badge rounded-pill text-bg-primary">Web Design Professional · ed2go</span>
+                <span class="badge rounded-pill text-bg-light border">Career changer</span>
+            </div>
+        </section>
+
+        <section class="resume-content">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="resume-side-card h-100">
+                        <p class="eyebrow">WHAT I BRING</p>
+                        <h2>Core strengths</h2>
+                        <ul class="list-unstyled resume-strengths mb-0">
+                            <li><span>01</span> Leadership and team coordination</li>
+                            <li><span>02</span> Customer service and communication</li>
+                            <li><span>03</span> Training and coaching</li>
+                            <li><span>04</span> Problem-solving under pressure</li>
+                            <li><span>05</span> Safety and attention to detail</li>
+                            <li><span>06</span> Time management and reliability</li>
+                            <li><span>07</span> Adaptability and multitasking</li>
+                            <li><span>08</span> Professional work ethic</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="accordion resume-accordion" id="resumeAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="education-heading">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#education-panel" aria-expanded="true" aria-controls="education-panel">
+                                    Education &amp; Professional Development
+                                </button>
+                            </h2>
+                            <div id="education-panel" class="accordion-collapse collapse show" role="region" aria-labelledby="education-heading" data-bs-parent="#resumeAccordion">
+                                <div class="accordion-body">
+                                    <div class="resume-entry">
+                                        <span class="resume-entry-marker"></span>
+                                        <h3>Web Design Professional</h3>
+                                        <p>ed2go · Ongoing coursework</p>
+                                        <p>Building skills in web design, visual communication, and front-end development through hands-on projects.</p>
+                                    </div>
+                                    <div class="resume-entry">
+                                        <span class="resume-entry-marker"></span>
+                                        <h3>Ironworker Apprentice</h3>
+                                        <p>Trade School Local 86 · Tacoma, WA</p>
+                                    </div>
+                                    <div class="resume-entry">
+                                        <span class="resume-entry-marker"></span>
+                                        <h3>National Academy of Sports Medicine</h3>
+                                        <p>Seattle, WA</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="experience-heading">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#experience-panel" aria-expanded="false" aria-controls="experience-panel">
+                                    Work Experience
+                                </button>
+                            </h2>
+                            <div id="experience-panel" class="accordion-collapse collapse" role="region" aria-labelledby="experience-heading" data-bs-parent="#resumeAccordion">
+                                <div class="accordion-body">
+                                    <div class="resume-entry">
+                                        <span class="resume-entry-marker"></span>
+                                        <h3>Ironworker</h3>
+                                        <p>Seattle, WA <span class="resume-date">2017–2021</span></p>
+                                    </div>
+                                    <div class="resume-entry">
+                                        <span class="resume-entry-marker"></span>
+                                        <h3>Personal Trainer</h3>
+                                        <p>Vision Quest · Seattle, WA <span class="resume-date">2010–2017</span></p>
+                                    </div>
+                                    <div class="resume-entry">
+                                        <span class="resume-entry-marker"></span>
+                                        <h3>Coffee Barista</h3>
+                                        <p>Seattle, WA <span class="resume-date">2008–2010</span></p>
+                                    </div>
+                                    <div class="resume-entry">
+                                        <span class="resume-entry-marker"></span>
+                                        <h3>Construction Laborer</h3>
+                                        <p>Seattle, WA <span class="resume-date">2005–2008</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="skills-heading">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#skills-panel" aria-expanded="false" aria-controls="skills-panel">
+                                    Skills
+                                </button>
+                            </h2>
+                            <div id="skills-panel" class="accordion-collapse collapse" role="region" aria-labelledby="skills-heading" data-bs-parent="#resumeAccordion">
+                                <div class="accordion-body">
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="badge rounded-pill text-bg-light border">Leadership</span>
+                                        <span class="badge rounded-pill text-bg-light border">Client communication</span>
+                                        <span class="badge rounded-pill text-bg-light border">Training</span>
+                                        <span class="badge rounded-pill text-bg-light border">Problem-solving</span>
+                                        <span class="badge rounded-pill text-bg-light border">Safety awareness</span>
+                                        <span class="badge rounded-pill text-bg-light border">Time management</span>
+                                        <span class="badge rounded-pill text-bg-light border">Adaptability</span>
+                                        <span class="badge rounded-pill text-bg-light border">Teamwork</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
    <footer>
   <p><a href="index.html">Return to Home</a></p>
   <p class="attribution">
@@ -97,5 +175,6 @@
   </p>
  
 </footer>
+    <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

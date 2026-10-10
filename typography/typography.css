@@ -20,10 +20,10 @@
 }
 /*list grid style*/
 .typography-terms {
-    margin-left: 20px;
+    margin-left: 0;
     margin-bottom: 20px;
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: minmax(0, 1fr);
     gap: 12px 20px;
     padding-left: 20px;
 }
@@ -41,8 +41,8 @@
 }
 /*article 1 and article 2 styling*/
 .article {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 0;
+    margin-right: 0;
     font-size: var(--base-font-size);
     line-height: 1.8;
 }
@@ -57,9 +57,10 @@
 /* row styling*/
 .example-row {
     display: flex;
-    align-items: flex-start;
-    gap: 24px;
-    margin: 20px 20px 30px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    margin: 1.25rem 0 2rem;
 }
 /* row paragraph styling*/
 .example-row p {
@@ -84,8 +85,8 @@
 
 /*opinion styling*/
 .opinion {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 0;
+    margin-right: 0;
     font-size: 1.5rem;
     line-height: 1.6;
     font-style: italic;
@@ -98,9 +99,6 @@
     font-size: 2rem;
     font-family: monospace ;
    text-align: center;
-   margin-top: 20px;
-   margin-bottom: 20px;
-   font-size: 2rem; 
 }
 /*cnn bold*/
 .bold {
@@ -122,8 +120,8 @@
 .font-power {
     font-size: var(--base-font-size);
     font-family: sans-serif;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 0;
+    margin-right: 0;
 }
 /*img and link styling*/
 img[src="../images/Crimson_desert_review_highest_fantasy.png"]{
@@ -155,4 +153,19 @@ a[href="https://www.gamespot.com/reviews/crimson-desert-review-highest-fantasy/1
     color: var(--link);
 }
 
-    
+@media (min-width: 768px) {
+    .typography-terms {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .example-row {
+        flex-direction: row;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .example-row > * {
+        min-width: 0;
+        flex: 1;
+    }
+}

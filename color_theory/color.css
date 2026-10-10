@@ -40,7 +40,7 @@
     }
     /*key terms*/
 .key-terms{
-    padding: 20px 40px;
+    padding: 1rem;
     text-align: center;
 }
 /*article text*/
@@ -149,13 +149,13 @@
 /*img and link styling*/
 img[src="../images/Target_expect_more_pay_less.png"] {
     display: block;
-    width: min(150%, 1050px);
+    width: min(100%, 1050px);
     height: auto;
     margin: 1.25rem auto;
 }
 img[src="../images/steam_store.png"] {
     display: block;
-    width: min(125%, 900px);
+    width: min(100%, 900px);
     height: auto;
     margin: 1.25rem auto;
     
@@ -169,6 +169,88 @@ a[href="https://store.steampowered.com/"] {
     display: block;
     text-align: center;
     margin-top: 5px;
+}
+/* Table styling */
+table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.color-table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: 0.9rem;
+    background: var(--card);
+    box-shadow: 0 12px 30px var(--card-shadow);
+}
+
+.color-table-wrap > .color-table {
+    display: table;
+    min-width: 760px;
+    margin: 0;
+    --bs-table-color: var(--text);
+    --bs-table-bg: var(--card);
+    --bs-table-border-color: var(--border);
+    --bs-table-hover-color: var(--text);
+    --bs-table-hover-bg: rgba(23, 107, 114, 0.07);
+}
+
+.color-table thead th {
+    padding: 1rem;
+    border-bottom-width: 2px;
+    background: #173b4b;
+    color: #fff;
+    font-size: 0.78rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+}
+
+.color-table tbody td {
+    padding: 1rem;
+    vertical-align: middle;
+}
+
+.color-table tbody td:nth-child(3) {
+    min-width: 195px;
+    white-space: nowrap;
+}
+
+.color-table .scheme-all {
+    width: 155px;
+    background: rgba(23, 107, 114, 0.09);
+    color: var(--heading);
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 700;
+}
+
+.color-table .color-description-case {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.color-table .color-sample {
+    width: 2rem;
+    height: 2rem;
+    margin: 0.15rem;
+    border-radius: 0.5rem;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+body.dark .color-table thead th {
+    background: #214c5b;
+}
+
+body.dark .color-table .scheme-all {
+    background: rgba(117, 198, 196, 0.12);
+    color: var(--heading);
+}
+
+body.dark .color-table .sample-neutral-1,
+body.dark .color-table .sample-neutral-2 {
+    border: 1px solid #687786;
 }
   
   

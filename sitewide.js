@@ -42,6 +42,7 @@ if (fontBtn) {
     document.body.classList.add(`font-size-${size}`);
     const label = `Font size: ${size.charAt(0).toUpperCase() + size.slice(1)}`;
     fontBtn.setAttribute("aria-label", label);
+    fontBtn.title = label;
   };
 
   applySize(current);
@@ -52,4 +53,50 @@ if (fontBtn) {
     applySize(current);
     localStorage.setItem("fontSize", current);
   });
+}
+/* Navigation setup */
+const siteNav = document.querySelector("nav");
+const siteNavList = siteNav?.querySelector(":scope > ul");
+
+if (siteNav && siteNavList) {
+  const collapseId = "portfolio-navigation";
+  const toggler = document.createElement("button");
+  const collapse = document.createElement("div");
+  const tools = document.createElement("div");
+  const icon = document.createElement("span");
+  const brand = document.createElement("a");
+
+  siteNav.classList.add("navbar", "navbar-expand-lg");
+  siteNav.classList.add("container-fluid");
+  siteNavList.classList.add("navbar-nav");
+  brand.className = "navbar-brand";
+  brand.href = siteNavList.querySelector(":scope > li > a")?.getAttribute("href") || "index.html";
+  brand.innerHTML = '<span class="brand-mark" aria-hidden="true">JJ</span><span>Justin Jackson</span>';
+  toggler.type = "button";
+  toggler.className = "navbar-toggler";
+  toggler.setAttribute("data-bs-toggle", "collapse");
+  toggler.setAttribute("data-bs-target", `#${collapseId}`);
+  toggler.setAttribute("aria-controls", collapseId);
+  toggler.setAttribute("aria-expanded", "false");
+  toggler.setAttribute("aria-label", "Toggle navigation");
+  icon.className = "navbar-toggler-icon";
+  toggler.append(icon);
+
+  collapse.id = collapseId;
+  collapse.className = "collapse navbar-collapse";
+  collapse.append(siteNavList);
+
+  tools.className = "navbar-tools";
+  if (button) {
+    button.classList.add("btn", "btn-sm", "site-tool");
+    tools.append(button);
+  }
+  if (fontBtn) {
+    fontBtn.classList.add("btn", "btn-sm", "site-tool");
+    tools.append(fontBtn);
+  }
+
+  siteNav.prepend(toggler);
+  siteNav.prepend(brand);
+  siteNav.append(collapse, tools);
 }

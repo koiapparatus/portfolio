@@ -11,7 +11,7 @@ const quizData = {
       {
   "question": "What is the largest ocean on Earth?",
   "options": [],
-  "answer": "Pacific Ocean",
+  "answer": ["Pacific Ocean", "The Pacific", "Pacific"],
   "type": "free-form"
 },
     

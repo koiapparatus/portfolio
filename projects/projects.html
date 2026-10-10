@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../bootstrap-5.2.3-dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../sitewide.css">
     <link rel="stylesheet" href="projects.css">
     <script src="../sitewide.js" defer></script>
@@ -54,40 +55,44 @@
     </header>
     <h1 class="my-projects">My Projects</h1>
     <p class="project-main">Here are some of the projects I've worked on:</p>
-    <ul class="project-list">
+    <ul class="row g-4 project-list">
        
-        <li class="project-item">
+        <li class="col-md-6 project-item project-item-featured project-item-poster card shadow-sm">
             <a class="project-thumb" href="project-1.html">
                 <img src="../images/project_1.jpg" alt="Made up poster advertisement screenshot">
             </a>
-            <div class="project-info">
+            <div class="project-info card-body">
+                <span class="badge rounded-pill text-bg-danger project-badge">Featured · Photoshop + Illustrator</span>
                 <a class="project-link" href="project-1.html">Made up poster advertisement</a>
                 <p>A poster layout design showing branding and typography for a fictional product.</p>
             </div>
         </li>
-        <li class="project-item">
+        <li class="col-md-6 project-item project-item-featured project-item-editorial card shadow-sm">
             <a class="project-thumb" href="project-2.html">
                 <img src="../images/animal-kingdom-news.gif" alt="Magazine cover layout design screenshot">
             </a>
-            <div class="project-info">
+            <div class="project-info card-body">
+                <span class="badge rounded-pill text-bg-success project-badge">Featured · InDesign + Photoshop</span>
                 <a class="project-link" href="project-2.html">Magazine cover layout design</a>
                 <p>A magazine cover concept with a strong editorial style and layered visuals.</p>
             </div>
         </li>
-        <li class="project-item">
+        <li class="col-md-6 project-item project-item-featured project-item-photoshop card shadow-sm">
             <a class="project-thumb" href="project-3.html">
                 <img src="../images/portfolio.gif" alt="Photoshop portfolio of digital art screenshot">
             </a>
-            <div class="project-info">
+            <div class="project-info card-body">
+                <span class="badge rounded-pill text-bg-primary project-badge">Featured · Photoshop</span>
                 <a class="project-link" href="project-3.html">Photoshop portfolio of digital art</a>
                 <p>A gallery presentation of digital art pieces created in Photoshop.</p>
             </div>
         </li>
-         <li class="project-item">
+         <li class="col-md-6 project-item project-item-featured project-item-animation card shadow-sm">
             <a class="project-thumb" href="project-4.html">
                 <img src="../images/seattle-fireworks-shot.png" alt="Seattle Animated Fireworks Display screenshot">
             </a>
-            <div class="project-info">
+            <div class="project-info card-body">
+                <span class="badge rounded-pill text-bg-warning project-badge">Featured · Animation</span>
                 <a class="project-link" href="project-4.html">Seattle Animated Fireworks Display</a>
                 <p>A short 12-second animation with a city skyline and fireworks built in HTML5 Canvas.</p>
             </div>
@@ -101,5 +106,6 @@
   </p>
     </footer>
    
+<script src="../bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
